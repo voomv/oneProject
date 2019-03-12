@@ -1,0 +1,64 @@
+/* pages/mine/mine-goods-detail.wxss */
+
+page{
+  width: 100%;
+  height: 100%;
+}
+.mine-goods-detail-container{
+  width: 100%;
+  height: 100%;
+  background-color: #f9f9f9;
+}
+.add-con{
+  width: 100%;
+  height: 100rpx;
+  margin-bottom: 1px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30rpx;
+  box-sizing: border-box;
+  align-items: center;
+}
+.add-con image{
+  width: 40rpx;
+  height: 40rpx;
+}
+.add-con2{
+  width: 100%;
+  height: 190rpx;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 30rpx 30rpx 0;
+  box-sizing: border-box;
+}
+.add-con2 textarea{
+  width: 530rpx;
+  height: 150rpx;
+  font-size: 30rpx;
+  overflow: auto;
+}
+.add-ipt{
+  width: 530rpx;
+  height: 100rpx;
+  font-size: 30rpx;
+}
+.add-ipt2{
+  width: 500rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 30rpx;
+  color: #808080;
+  padding-left: 27rpx;
+  overflow: auto;
+  box-sizing: border-box;
+}
+.add-btn{
+  width: calc(100% - 60rpx);
+  height: 90rpx;
+  margin: 80rpx auto;
+  background-color: #16bf76;
+  border-radius: 5px;
+  color: #fff;
+}

@@ -1,0 +1,15 @@
+<view class="tab-list">
+  <text class="{{tab==1?'active':''}}" data-current="1" bindtap="tabChange">电动车类型</text>
+  <text class="{{tab==2?'active':''}}" data-current="2" bindtap="tabChange">电瓶型号</text>
+</view>
+<view class="content-list">
+  <view class="no-data" wx:if="{{showFlag}}">暂无数据...</view>
+  <!-- <navigator hover-class='none' url="/pages/mall/details"> -->
+    <block wx:for="{{goodsInfo}}" wx:key="">
+      <view class="list" data-goodsid="{{item.goods_id}}" bindtap="goodsClick">
+        <image src="{{item.photo}}"></image>
+        <view class="text">{{item.name}}</view>
+      </view>
+    </block>
+  <!-- </navigator> -->
+</view>

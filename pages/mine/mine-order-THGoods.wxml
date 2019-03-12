@@ -1,0 +1,14 @@
+<!--pages/mine/mine-order-THGoods.wxml-->
+
+<view class='mine-order-THG-container'>
+  <radio-group class="radio-group" bindchange="radioChange">
+    <!-- <label class="radio" wx:for="{{items}}" wx:key="">
+      <radio value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+    </label> -->
+    <radio class="radio" wx:for-items="{{items}}" wx:key="" value="{{item.id}}" checked="{{item.checked}}">
+      <text class='fz32 marginL10'>{{item.value}}</text>
+    </radio>
+  </radio-group>
+  <view class='radio-btn' bindtap='toWhichGoods'>确认</view>
+</view>
+

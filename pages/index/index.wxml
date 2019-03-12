@@ -1,0 +1,131 @@
+<view class='topTaps'>
+  <view class="tap {{tapSelect==1?'on':''}}" data-id="1" bindtap='stateChange'>跑腿订单</view>
+  <view class="tap {{tapSelect==2?'on':''}}" data-id="2" bindtap='stateChange'>待取货</view>
+  <view class="tap {{tapSelect==3?'on':''}}" data-id="3" bindtap='stateChange'>配送中</view>
+</view>
+<view class='lists'>
+  <view class='list' hidden='{{tapSelect!=1}}' wx:for="{{lists1}}" wx:key='id'>
+    
+    <view class='order'>
+      <text class='tit'>订单号：{{item.order_id}}</text>
+      <text style="display:{{item.is_chang==0?'block':'none'}}" class="text2">正常发货</text>
+      <text style="display:{{item.is_chang==1?'block':'none'}}" class="text2">换货订单</text>
+      <text style="display:{{item.is_chang==2?'block':'none'}}" class="text2">退货订单</text>
+    </view>
+    <block wx:for="{{item.goods}}" wx:for-item="goods" wx:key='id'>
+      <view class='menu clearfix' wx:for="{{item.goods}}" wx:for-item="goods" wx:key='id'>
+        <!-- <view class="img-box">
+          <image src='{{goods.photo}}'></image>
+        </view> -->
+        <view class="right-box">
+            <view class='tit'>
+              <text>物品名称：{{goods.goods_name}}</text>
+            </view>
+            <!-- <view class="sku">
+              <text class="sku-name">{{goods.sku.name}}</text>
+              <text>×{{goods.num}}</text>
+            </view> -->
+        </view>
+        <view style='height:20rpx;'></view>
+            
+      </view>
+      
+    </block>
+    <view class='add'>
+      <view bindtap='navigation' data-lat="{{item.lat}}" data-lng="{{item.lng}}" data-add="{{item.province}}{{item.address}}">
+        <text class="text1">送　货：</text>
+        <text class="text2">{{item.province}}{{item.address}}</text>
+        <text class='iconfont icon-weizhi'></text>
+      </view>
+    </view>
+    <view class='btn' data-type="1" data-id="{{item.order_id}}"  data-is_chang="{{item.is_chang}}" data-money="{{item.income}}" bindtap='setOrderStatus'>抢单</view>
+  </view>
+   <view class='list' hidden='{{tapSelect!=2}}' wx:for="{{lists2}}" wx:key='id'>
+    <view class='top'>
+        
+      <view>
+        <!-- <view>{{item.store.name?item.store.name:item.store.nick_name}}</view> -->
+        <!-- <view>{{item.time}}</view> -->
+      </view>
+    </view>
+    <view class='order'>
+      <text class='tit'>订单号：{{item.order_id}}</text>
+      <text style="display:{{item.is_chang==0?'block':'none'}}" class="text2">正常发货</text>
+      <text style="display:{{item.is_chang==1?'block':'none'}}" class="text2">换货订单</text>
+      <text style="display:{{item.is_chang==2?'block':'none'}}" class="text2">退货订单</text>
+    </view>
+    <block wx:for="{{item.goods}}" wx:for-item="goods" wx:key="">
+      <view class='menu clearfix' wx:for="{{item.goods}}" wx:for-item="goods" wx:key=""> 
+        <!-- <view class="img-box">
+          <image src='{{goods.photo}}'></image>
+        </view> -->
+        <view class="right-box">
+            <view class='tit'>
+              <text>物品名称：{{goods.goods_name}}</text>
+            </view>
+            <!-- <view class="sku">
+              <text class="sku-name">{{goods.sku.name}}</text>
+              <text>×{{goods.num}}</text>
+            </view> -->
+        </view>
+        <view style='height:20rpx;'></view>
+            
+      </view>
+    </block>
+    <view class='add'>
+      <view  bindtap='navigation' data-lat="{{item.lat2}}" data-lng="{{item.lng2}}" data-add="{{item.province}}{{item.address2}}">
+        <text class="text1">取　货：</text>
+        <text class="text2">{{item.address2}}</text>
+         <!-- <text class="text2">{{item.province}}{{item.address2}}</text> -->
+        <text class='iconfont icon-weizhi'></text>
+      </view>
+    </view>
+    <view class='add'>
+      <view  bindtap='navigation' data-lat="{{item.lat}}" data-lng="{{item.lng}}" data-add="{{item.province}}{{item.address}}">
+        <text class="text1">送　货：</text>
+        <text class="text2">{{item.province}}{{item.address}}</text>
+        <text class='iconfont icon-weizhi'></text>
+      </view>
+    </view>
+    <view class='btn' data-type="2" data-is_chang="{{item.is_chang}}" data-id="{{item.order_id}}" data-money="{{item.income}}" bindtap='setOrderStatus'>取货</view>
+  </view>
+
+  <view hidden='{{tapSelect!=3}}' wx:for="{{lists3}}" wx:key='id'>
+    <view class='order'>
+      <text class='tit'>订单号：{{item.order_id}}</text>
+      <text style="display:{{item.is_chang==0?'block':'none'}}" class="text2">正常发货</text>
+      <text style="display:{{item.is_chang==1?'block':'none'}}" class="text2">换货订单</text>
+      <text style="display:{{item.is_chang==2?'block':'none'}}" class="text2">退货订单</text>
+    </view>
+    <view class="list2">
+    <block  wx:for="{{item.goods}}" wx:for-item="goods" wx:key="" >
+      <view class='menu clearfix con'>
+        <!-- <view class="img-box">
+          <image src='{{goods.photo}}'></image>
+        </view> -->
+        <view class="right-box">
+            <view class='tit'>
+              <text>物品名称：{{goods.goods_name}}</text>
+            </view>
+            <!-- <view class="sku">
+              <text class="sku-name">{{goods.sku.name}}</text>
+              <text>×{{goods.num}}</text>
+            </view> -->
+        </view>
+      </view>
+     </block>
+    <view class='add' bindtap='navigation' data-lat="{{item.lat}}" data-lng="{{item.lng}}" data-add="{{item.province}}{{item.address}}">
+      <text class="text1">配送地址：</text>
+      <text class="text2">{{item.province}}{{item.address}}</text>
+      <text class='iconfont icon-weizhi'></text>
+    </view>
+    <view class='btn'>
+      <view data-phone="{{item.mobile}}" bindtap='contact'>联系顾客</view>
+      <view style='background-color:#16bf76;color:#ffffff' data-type="3" data-is_chang="{{item.is_chang}}" data-id="{{item.order_id}}"  bindtap='setOrderStatus'>确认送达</view>
+    </view>
+    </view>
+  </view>
+</view>
+<button class='tips' style='background-color:{{setting.color?setting.color:"#ffa42f"}}' open-type='getUserInfo' bindgetuserinfo='setState'>{{state?"抢单中":"休息中"}}</button>
+<import src="../plugin/plugin.wxml"/>
+<template is="footer" data="{{tab_index:tab_index,item:setting}}"></template>

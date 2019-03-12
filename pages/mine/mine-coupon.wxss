@@ -1,0 +1,100 @@
+/* pages/mine/mine-coupon.wxss */
+
+page{
+  width: 100%;
+  height: 100%;
+}
+.mine-coupon-container{
+  width: 100%;
+  height: 100%;
+}
+.mine-coupon-tab{
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+}
+.mct-con{
+  width: 25%;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  font-size: 32rpx;
+  color: #666;
+}
+.mct-con-show{
+  width: 100%;
+  height: calc(100% - 110rpx);
+  overflow: auto;
+}
+.mcs-list{
+  width: 100%;
+  height: 190rpx;
+  padding: 40rpx 0;
+  text-align: center;
+  position: relative;
+  color: #fff;
+}
+.mcs-list image{
+  width: 660rpx;
+  height: 180rpx;
+}
+.mcs-list-one{
+  width: 460rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  position: absolute;
+  top: 60rpx;
+  left: 50rpx;
+  display: flex;
+  justify-content: center;
+}
+.mcs-list-two{
+  width: 200rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  position: absolute;
+  top: 120rpx;
+  left: 180rpx;
+  font-size: 24rpx;
+  font-weight: 600;
+  border-radius: 100rpx;
+  background-color: #fff;
+  color: #ffa42f;
+}
+.mcs-list-two2{
+  width: 200rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  position: absolute;
+  top: 120rpx;
+  left: 180rpx;
+  font-size: 24rpx;
+  font-weight: 600;
+  border-radius: 100rpx;
+  background-color: #fff;
+  color: #d5d5d5;
+}
+.mcs-list-three{
+  width: 460rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  position: absolute;
+  top: 160rpx;
+  left: 50rpx;
+  font-size: 24rpx;
+}
+.mcs-list-four{
+  width: 110rpx;
+  position: absolute;
+  top: 75rpx;
+  right: 85rpx;
+  font-size: 40rpx;
+}
+.mcs-list-four2{
+  width: 130rpx;
+  position: absolute;
+  top: 98rpx;
+  right: 80rpx;
+  font-size: 40rpx;
+  text-align: center;
+}

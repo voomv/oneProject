@@ -1,0 +1,37 @@
+<import src="../template/login.wxml"/>
+<view class="bg-box">
+  <image src="../../images/bg.jpg"></image>
+</view>
+<view class='content'>
+    <view class='con'>
+      <image class="img" src="../../images/icon1.png"></image>
+      <input type='number' bindinput='getTel' placeholder='账号' placeholder-style='color:#cccccc;font-size:32rpx;' maxlength='11'/>
+    </view>
+    <view class='con'>
+      <image class="img" src="../../images/icon2.png"></image>
+      <input type='text' password="true" bindinput='getPass' placeholder='密码' placeholder-style='color:#cccccc;font-size:32rpx;' maxlength='16'/>
+    </view>
+    <view class='ch' style=''>
+      <view bindtap='loginFree'>
+        <!-- <checkbox style='margin-right:10rpx;' checked='{{loginFree}}' bindtap='loginFree'/> -->
+        <text class="rad1"><text class="rad2" wx:if="{{loginFree}}"></text></text>
+        7天内免登陆
+      </view>
+      <view class="forget-text">
+        <navigator url='/pages/login/forget'>忘记密码</navigator>？
+      </view>
+      
+    </view>
+    <view class='btn'>
+      <button bindtap="login">登录</button>
+    </view>
+    <view class="zhuce">
+      <!-- <text class="text1">没有账号?</text> -->
+      <!-- <text class="text2" bindtap='zhuce'>立即注册</text> -->
+      <!-- <button  style='border:1rpx solid {{setting.color?setting.color:""}};color:{{setting.color?setting.color:""}}'>注册</button> -->
+    </view>
+</view>
+<!-- 授权 -->
+<view wx:if="{{showLogin}}">
+  <template is="login"></template>
+</view>

@@ -1,0 +1,20 @@
+<template name="login">
+  <view>
+      <view class="mask"></view>
+      <view class="model">
+          <view class="icon-group">
+            <image src='../../images/login.png'/>
+          </view>
+        <view class="modelBody">
+          <view class='tips'>
+            <view>小程序申请获得以下权限</view>
+            <view>获得您的公开信息（头像、昵称等）</view>
+          </view>
+        </view> 
+        <view class="btns">
+          <button type="primary" size="mine" open-type="getUserInfo" class="agree" bindgetuserinfo="agreeGetUser" lang="zh_CN">安全登录</button>
+          <view bindtap='noAgreeGetUser' style='font-size:22rpx;color:#999999;text-align:center;line-height:22rpx;'>取消</view>
+        </view>
+      </view>
+    </view> 
+</template>

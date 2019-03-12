@@ -1,0 +1,41 @@
+.list-box{
+  margin-top:40rpx;
+}
+.list{
+  display:flex;
+  justify-content:space-between;
+  padding:0 26rpx;
+  margin:40rpx 0;
+}
+.list text{
+  font-size:30rpx;
+  color:#333;
+  line-height:76rpx;
+}
+.list input{
+  width:506rpx;
+  height:76rpx;
+  border:2rpx solid #ccc;
+  background:#fafafa;
+  border-radius:10rpx;
+  font-size:28rpx;
+  padding:0 10rpx;
+}
+.list .text-cont{
+  font-size:28rpx;
+  width:506rpx;
+  height:156rpx;
+  border:2rpx solid #ccc;
+  background:#fafafa;
+  border-radius:10rpx;
+  padding:10rpx;
+}
+
+.submit{
+  width:698rpx;
+  height:90rpx;
+  background:#16bf76;
+  color:#fff;
+  font-size:32rpx;
+  margin-top:100rpx;
+}

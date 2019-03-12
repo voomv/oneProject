@@ -1,0 +1,59 @@
+<view class="mail-container">
+  <!-- <view class="notice" style="position:absolute;top:0;animation:myfirst 15s linear infinite;white-space: nowrap; color:#333};  font-size:{{size}}px;"> 欢迎光临沃换电瓶，配送时间为<text class="red">8:00-18:00</text>(循环滚动，后台添加)</view> -->
+
+<view class="example">
+  <view class="marquee_box">
+    <view class="marquee_text" style="{{orientation}}:{{marqueeDistance2}}px;font-size: {{size}}px;">
+      <text>{{text}}<text class="red">8:00-18:00</text></text>
+      <text wx:if="{{marquee2copy_status}}" style="margin-left:{{marquee2_margin}}px;">{{text}}<text class="red">8:00-18:00</text></text>
+    </view>
+  </view>
+</view>
+
+  <view class="category">
+    <navigator hover-class="none" url="/pages/mall/change">
+      <view class="c-list">
+        <image src="../../images/l_cate1.png"></image>
+        <text>以旧换新</text>
+      </view> 
+    </navigator>
+    <navigator hover-class="none" url="/pages/mall/wait">
+      <view class="c-list">
+        <image src="../../images/l_cate2.png"></image>
+        <text>电瓶租赁</text>
+      </view>
+    </navigator>
+  </view>
+  <view class="category">
+    <navigator hover-class="none" url="/pages/mall/wait">
+      <view class="c-list">
+        <image src="../../images/l_cate3.png"></image>
+        <text>道路救援</text>
+      </view>
+    </navigator>
+    <navigator hover-class="none" url="/pages/mall/aftersale">
+      <view class="c-list">
+        <image src="../../images/l_cate4.png"></image>
+        <text>售后保障</text>
+      </view>
+    </navigator>
+  </view>
+  <view class='common-footer'>
+    <view class='common-footer-con' bindtap='toHome'>
+      <view class='cfc-img'><image src='../../images/home.png'></image></view>
+      <view class='cfc-fonts'>首页</view>
+    </view>
+    <view class='common-footer-con'>
+      <view class='cfc-img'><image src='../../images/shopping_1.png'></image></view>
+      <view class='cfc-fonts_1'>服务商城</view>
+    </view>
+    <view class='common-footer-con' bindtap='toShopping'>
+      <view class='cfc-img'><image src='../../images/cart.png'></image></view>
+      <view class='cfc-fonts'>购物车</view>
+    </view>
+    <view class='common-footer-con' bindtap='toMine'>
+      <view class='cfc-img'><image src='../../images/mine.png'></image></view>
+      <view class='cfc-fonts'>我的</view>
+    </view>
+  </view>
+</view>

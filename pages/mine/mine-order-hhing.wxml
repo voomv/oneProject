@@ -1,0 +1,36 @@
+<!--pages/mine/mine-order-hhing.wxml-->
+
+<view class="wai">
+  <view class="xinxi">
+      <image class="wan" src="../../images/thing.png"></image>
+      <view class="wantext">换货中</view>
+  </view>
+  <view class="shop">
+      <image class="tu" src="../../images/ding-1.png"></image>
+      <view class="you">
+          <view class="shoptext1">商品名称</view>
+          <view class="shoptext2">36V12Ah</view>
+          <view class="shoptext1">￥450</view>
+      </view>
+      <view class="shoptext3">x1</view>
+  </view>
+  <view class="allw"><view class="all">
+      <view class="right2">合计：</view>
+      <view class="right3">￥450</view>
+      <!-- <view class="right4" bindtap="peisong">退货/换货</view> -->
+  </view>
+  </view>
+  <view class="name">
+      <view class="names"><view class="name1">收货人姓名</view><view class="name2">张ZZ（女士）</view></view>
+      <view class="names"><view class="name1">收货人电话</view><view class="name2">15060887611</view></view>
+      <view class="names"><view class="name1">收货人地址</view><view class="name2">浙商广场A座607</view></view>
+  </view>
+  <view class="name">
+      <view class="names"><view class="name1">下单时间</view><view class="name3">2018-11-5   13:25</view></view>
+      <view class="names"><view class="name1">付款时间</view><view class="name3">2018-11-5   13:30</view></view>
+      <!-- <view class="names"><view class="name1">退款时间</view><view class="name3">2018-11-5   16:25</view></view> -->
+  </view>
+  <view class="all1">
+      <view class="call">联系客服</view><view class="call">拨打电话</view>
+  </view>
+</view>

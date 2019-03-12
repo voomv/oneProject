@@ -1,0 +1,106 @@
+.list{
+  padding: 21rpx 26rpx 45rpx;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  margin-bottom: 19rpx;
+}
+.list .top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.list .top image{
+  width: 90rpx;
+  height: 90rpx;
+  border-radius: 100%;
+  background-color:#a6a6a6; 
+  margin-right: 30rpx;
+}
+.list .top>view{
+  flex: 2;
+}
+.list .top>view>view:first-child{
+  font-size: 32rpx;
+  color: #333333;
+  line-height: 32rpx;
+  margin:11rpx 0 14rpx;
+}
+.list .top>view>view:last-child{
+  font-size: 24rpx;
+  color: #999999;
+  line-height: 24rpx;
+}
+.list .top text{
+  color: #0bb4ff;
+  font-size: 28rpx
+}
+.list .menu{
+  margin: 39rpx 0 41rpx;
+}
+.list .menu>view{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-size: 30rpx;
+  color: #999999;
+  line-height: 30rpx;
+}
+.list .menu>view:first-child{
+  margin-bottom: 20rpx;
+}
+ .list .menu>view:last-child>view:nth-child(2){
+  flex: 2;
+  word-break:break-all;
+}
+.jiantou{
+  width: 0rpx;
+  height: 0rpx;
+  margin-left: 20rpx;
+  border-left: 14rpx solid red;
+  border-top: 14rpx solid transparent;
+  border-right: 14rpx solid transparent;
+  border-bottom: 14rpx solid transparent;
+}
+
+.list .menu>view:last-child>view text{
+  margin-bottom: 10rpx;
+}
+.list .menu>view:last-child>view text::after{
+  content: "，"
+}
+.list .menu>view:last-child>view text:last-child::after{
+  content: ""
+}
+.list .menu>view:last-child>view text:last-child{
+  margin: 0;
+}
+ .list .menu>view .tit{
+  color: #333333;
+  width: 125rpx;
+}
+.list .add view{
+  display: flex;
+  justify-content: space-between;
+  font-size: 28rpx;
+  padding: 10rpx 0;
+}
+.list .add view text:nth-child(2){
+  flex: 2;
+  color: #999
+}  
+.list .add view text:nth-child(3){
+  font-size: 36rpx;
+  color: #0bb4ff;
+  margin-left: 100rpx;
+}
+.list .btn{
+  width: 640rpx;
+  height: 80rpx;
+  background-color: #0bb4ff;
+  text-align: center;
+  line-height: 80rpx;
+  margin: 0 auto;
+  border-radius: 10rpx;
+  color: #ffffff;
+  margin-top: 32rpx;
+}

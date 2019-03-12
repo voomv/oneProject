@@ -1,0 +1,17 @@
+<form bindsubmit="submitInfo">
+  <view class="list-box">
+    <view class="list">
+      <text>您的姓名：</text>
+      <input type="text" name="name" placeholder="请输入姓名"></input>
+    </view>
+    <view class="list">
+      <text>联系电话：</text>
+      <input type="text" name="tel" placeholder="请输入电话"></input>
+    </view>
+    <view class="list">
+      <text class="a-text">地　　址：</text>
+      <textarea class="text-cont" type="text" name="address" placeholder="请输入地址"></textarea>
+    </view>
+  </view>
+  <button form-type="submit" class="submit">提交</button>
+</form>

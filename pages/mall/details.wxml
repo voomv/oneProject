@@ -1,0 +1,139 @@
+<swiper class="tab-img" autoplay="true" indicator-dots indicator-color="rgba(0, 0, 0, 0.3)" indicator-active-color="#fff" circular>
+    <block>
+      <swiper-item >
+        <image src="{{detailsInfo.photo}}"/>
+      </swiper-item>
+    </block>
+</swiper>
+<view class="d-box1">
+  <view class="share">
+    <image src="../../images/l_share.png"></image>
+    <text>分享</text>
+  </view>
+  <view class="title1">{{detailsInfo.name}}</view>
+  <view class="price">
+    <text class="t1">￥{{price}}</text>
+    <text class="t2">（以旧换新价）</text>
+  </view>
+  <view class="d-volume">
+    <text class="v-text">销量:{{detailsInfo.sales}}</text>
+    <text>库存:{{detailsInfo.stock}}</text>
+  </view>
+</view>
+<view class="d-box2 clearfix">
+    <view class="d-title">承诺</view>
+    <view class="d-text">
+      <text>{{detailsInfo.admit}}</text>
+    </view>
+    <!-- <view class="d-text">
+      <text>品牌保障</text>
+      <text>24小时退换</text>
+      <text>官方授权</text>
+      <text>极速退款</text>
+      <text>送货上门</text>
+      <text>安装免费</text>
+    </view> -->
+</view>
+<view class="d-box3">
+  <view class="list clearfix">
+    <view class="l-text">规格</view>
+    <view class="r-text">
+      <text class="{{speFlag==0?'active':''}}" data-current="0" bindtap="speClick">36V12Ah</text>
+      <text class="{{speFlag==1?'active':''}}" data-current="1" bindtap="speClick">36V12Ah</text>
+      <text class="{{speFlag==2?'active':''}}" data-current="2" bindtap="speClick">36V12Ah</text>
+      <text class="{{speFlag==3?'active':''}}" data-current="3" bindtap="speClick">36V12Ah</text>
+    </view>
+  </view>
+  <view class="list clearfix">
+    <view class="l-text">购买</view>
+    <view class="r-text">
+      <text class="{{buyFlag==0?'active':''}}" data-current="0" bindtap="buyClick">以旧换新</text>
+      <text class="{{buyFlag==1?'active':''}}" data-current="1" bindtap="buyClick">直接购买</text>
+    </view>
+  </view>
+  <view class="list clearfix">
+    <view class="l-text">质保</view>
+    <view class="r-text">
+      <text class="{{qaFlag==1?'active':''}}" data-current="1" bindtap="qaClick">延保1年</text>
+      <text class="{{qaFlag==2?'active':''}}" data-current="2" bindtap="qaClick">延保2年</text>
+    </view>
+  </view>
+  <view class="list clearfix">
+    <view class="l-text">数量</view>
+    <view class="num-box">
+      <text class="jian" bindtap="jian">-</text>
+      <input type="number" bindinput="getNum" value="{{num}}" name="number"></input>
+      <text class="jia" bindtap="jia">+</text>
+    </view>
+    <view class="l-text2">（最高可购买10件）</view>
+  </view>
+</view>
+
+<view class="detail-box">
+  <view class="d-tabs clearfix">
+    <text class="text {{intFlag==0?'active':''}}" data-current="0" bindtap="intClick">图文介绍</text>
+    <text class="border"></text>
+    <text class="text {{intFlag==1?'active':''}}" data-current="1" bindtap="intClick">商品评价</text>
+  </view>
+  <!-- 图文介绍 -->
+  <view class="d-center">
+    <image src="../../images/l_pic1.jpg"></image>
+    <view class="dc-text">雅迪电动车48V12A锂电池米乐乐男女款电动自行车小型电瓶车踏板车雅迪电动车48V12A锂电池米乐乐男女款电动自行车小型电瓶车踏板车雅迪电动车48V12A锂电池米乐乐男女款电动自行车小型电瓶车踏板车雅迪电动车48V12A锂电池米乐乐男女款电动自行车小型电瓶车踏板车雅迪电动车48V12A锂电池米乐乐男女款电动自行车小型电瓶车踏板车雅迪电动车48V12A锂电池米乐乐男女款电动自行车小型电瓶车踏板车</view>
+  </view>
+  <!-- 商品评价 -->
+  <view class="evaluate-box">
+    <view class="eva-list clearfix">
+      <view class="eva-l">
+        <image src="../../images/tou.png"></image>
+      </view>
+      <view class="eva-r">
+        <view class="eva-1">
+          <text class="eva-text1">痴睡黑猫</text>
+          <text class="time">2017.10.24</text>
+        </view>
+        <view class="eva-2">
+          <image src="../../images/start.png"></image>
+          <image src="../../images/start.png"></image>
+          <image src="../../images/start.png"></image>
+          <image src="../../images/start.png"></image>
+          <image src="../../images/start.png"></image>
+        </view>
+        <view class="eva-3">车子不错，和实体店一样的，在实体店看好的直接奔着她家来的，喜欢的直接下单</view>
+        <view class="eva-4">
+          <image src="../../images/l_pic1.jpg"></image>
+          <image src="../../images/l_pic1.jpg"></image>
+          <image src="../../images/l_pic1.jpg"></image>
+        </view>
+      </view>
+    </view>
+    <view class="eva-list clearfix">
+      <view class="eva-l">
+        <image src="../../images/tou.png"></image>
+      </view>
+      <view class="eva-r">
+        <view class="eva-1">
+          <text class="eva-text1">痴睡黑猫</text>
+          <text class="time">2017.10.24</text>
+        </view>
+        <view class="eva-2">
+          <image src="../../images/start.png"></image>
+          <image src="../../images/start.png"></image>
+          <image src="../../images/start.png"></image>
+          <image src="../../images/start.png"></image>
+          <image src="../../images/start.png"></image>
+        </view>
+        <view class="eva-3">车子不错，和实体店一样的，在实体店看好的直接奔着她家来的，喜欢的直接下单</view>
+        <view class="eva-4">
+          <image src="../../images/l_pic1.jpg"></image>
+          <image src="../../images/l_pic1.jpg"></image>
+          <image src="../../images/l_pic1.jpg"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+
+</view>
+<view class="d-btns">
+  <button class="d-cart">加入购物车</button>
+  <button class="d-buy" bindtap='toMallBuy'>立即购买</button>
+</view>

@@ -1,0 +1,75 @@
+page{
+  overflow: hidden;
+}
+.img-box{
+  width:100%;
+  height:100vh;
+}
+.img-box image{
+  width:100%;height:100%;
+}
+.content{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 600rpx;
+  padding:42rpx 35rpx;
+  background:rgba(255,255,255,0.4);
+  border-radius:20rpx;
+
+}
+
+.content .con{
+  margin-bottom: 20rpx;
+  position: relative;
+}
+.content .con .tit{
+  width:100%;
+  font-size: 32rpx;
+  color: #333333;
+}
+.content .con input{
+  width:580rpx;
+  padding:0 10rpx;
+  height: 90rpx;
+  font-size: 32rpx;
+  color: #333333;
+  background:#fff;
+  border-radius:10rpx;
+  text-align:center;
+}
+.content .con image{
+  width: 169rpx;
+  height: 44rpx;
+  position: absolute;
+  right: 24rpx;
+  top:23rpx;
+  background: red;
+  z-index: 99;
+}
+.content .con .get-text{
+  position:absolute;
+  right:24rpx;
+  top:20rpx;
+  z-index:99;
+}
+.content .con>view{
+  color: #0bb4ff;
+  font-size: 32rpx;
+  width: 100%;
+  position:relative;
+  margin:10rpx 0;
+}
+.btn{
+  margin-top: 90rpx;
+}
+.btn button{
+  width: 600rpx;
+  height: 90rpx;
+  font-size: 34rpx;
+  color: #ffffff;
+  margin-bottom: 30rpx;
+  line-height: 90rpx;
+  background-color:#16bf76; 
+}

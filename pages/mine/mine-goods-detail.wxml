@@ -1,0 +1,26 @@
+<!--pages/mine/mine-goods-detail.wxml-->
+<view class='mine-goods-detail-container'>
+  <form bindsubmit="addressEdit">
+    <view class="add-con">
+      <view class="fz30 co333">收货人</view>
+      <input name="consignee" class='add-ipt' placeholder="收货人" />
+    </view>
+    <view class="add-con">
+      <view class="fz30 co333">联系电话</view>
+      <input type='number' maxlength='11' name="phone" class='add-ipt' placeholder="联系电话" />
+    </view>
+    <view class="add-con">
+      <view class="fz30 co333">所在地区</view>
+      <!-- <input  name="area" class='add-ipt' placeholder="所在地区" bindtap='getLocation'/> -->
+      <view class='add-ipt2' bindtap='getLocation'>{{chooseAddress}}</view>
+      <image src='../../images/next.png'></image>
+    </view>
+    <view class="add-con2">
+      <view class="fz30 co333">详细地址</view>
+      <textarea name="detailAddress" placeholder='详细地址'></textarea>
+    </view>
+    <input type='text' name="area" class='disN' value='{{chooseAddress}}'></input>
+    <button formType="submit" class='add-btn'>保存地址</button>
+
+  </form>
+</view>

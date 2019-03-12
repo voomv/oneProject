@@ -1,0 +1,19 @@
+<!--pages/mine/mine-balance.wxml-->
+<view class='mine-balance-container'>
+  <view class='mine-bal-banner'>
+    <view class='mbb-one'>当前账户余额</view>
+    <view class='mbb-two'>1500</view>
+    <image src='../../images/gift.png' class='mbb-three'></image>
+  </view>
+  <form bindsubmit="mineBalFormSubmit">
+    <view class='mine-bal-form-one'>
+      <view>充值金额：</view>
+      <view><input name="input" class='mine-bal-ipt' placeholder="输入充值金额" /></view>
+    </view>
+    <view class="mine-bal-form-two">
+      <button formType="submit">提现</button>
+      <button formType="reset">充值</button>
+    </view>
+  </form>
+  <view class='mine-bal-bottom' bindtap='toMineBalanceDetail'>交易明细</view>
+</view>

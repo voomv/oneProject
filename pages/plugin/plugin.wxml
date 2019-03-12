@@ -1,0 +1,32 @@
+<!-- <template name="footer">
+  <view class='footer'>
+    <view class='icon icon1' data-url="/pages/index/index" bindtap='link'>
+      <view class='iconfont icon-shouye'></view>
+      <view class='tit'>首页</view>
+    </view>
+    <view class='icon icon2' data-url="/pages/mine/mine" bindtap='link'>
+      <view class='iconfont icon-weibiaoti2fuzhi12'></view>
+      <view class='tit'>我的</view>
+    </view>
+  </view>
+</template> -->
+<template name="footer">
+  <view class="footer">
+    <view bindtap='toHome' class="icon" >
+    <!-- <navigator hover-class="none" url="/pages/index/index"> -->
+      <view class="icon">
+        <text style='color:{{tab_index==0? "#16bf76":""}}' class="iconfont icon-shouye"></text>
+        <text class='tit' style='color:{{tab_index==0?"#16bf76":""}}'>首页</text>
+      </view>
+    <!-- </navigator> -->
+    </view>
+    <view bindtap='toMe'  class="icon" >
+    <!-- <navigator hover-class="none" url="/pages/mine/mine"> -->
+      <view class="icon">
+        <text style='color:{{tab_index==1?"#16bf76":""}}' class="iconfont icon-weibiaoti2fuzhi12"></text>
+        <text class='tit' style='color:{{tab_index==1?"#16bf76":""}}'>我的</text>
+      </view>
+    <!-- </navigator> -->
+    </view>
+  </view>
+</template>

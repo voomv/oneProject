@@ -1,0 +1,145 @@
+/* pages/mine/mine-order-thend.wxss */
+
+.wai{
+   width:750rpx;
+   height:1100rpx;
+   background:#f9f9f9;
+}
+.xinxi{
+    width:750rpx;
+    height:250rpx;
+    background-color: #16bf76;
+}
+.wan{
+    width:90rpx;
+    height:90rpx;
+    margin-left:330rpx;
+    margin-top:46rpx;
+}
+.wantext{
+    font:38rpx/98rpx 微软雅黑;
+    color:#fff;
+    text-align: center;
+}
+.shop{
+    width:750rpx;
+    height:250rpx;
+    background-color: #fff;
+}
+.tu{
+    width:180rpx;
+    height:180rpx;
+    margin-left:26rpx;
+    margin-top:40rpx;
+    border:1rpx solid #e5e5e5;
+    border-radius: 7rpx;
+    float:left;
+}
+.you{
+    float:left;
+    margin-top:40rpx;
+}
+.shoptext1{
+    font:32rpx/54rpx 微软雅黑;
+    color:#000;
+    margin-left:23rpx;
+}
+.shoptext2{
+    font:30rpx/60rpx 微软雅黑;
+    color:#666;
+    margin-left:23rpx;
+    text-align: center;
+    width:140rpx;
+    height:60rpx;
+    background-color: #f7f7f7;
+}
+.shoptext3{
+    font:30rpx/60rpx 微软雅黑;
+    color:#666;
+    margin-right:26rpx;
+    margin-top:108rpx;
+    float:right;
+}
+.allw{
+    width:750rpx;
+    height:100rpx;
+    background-color: #fff;
+}
+.all{
+    width:698rpx;
+    height:100rpx;
+    border-top:1rpx solid #e5e5e5;
+    background-color: #fff;
+    margin:0 auto;
+}
+.right2{
+    font:32rpx/100rpx 微软雅黑;
+    color:#000;
+    float:left;
+}
+.right3{
+    font:32rpx/100rpx 微软雅黑;
+    color:#ff102c;
+    float:left;
+}
+.right4{
+    width:138rpx;
+    height:58rpx;
+    border:1rpx solid #ccc;
+    border-radius:7rpx;
+    margin-top:20rpx;
+    float:right;
+    font:28rpx/58rpx 微软雅黑;
+    color:#999;
+    text-align: center;
+}
+.name{
+    width:750rpx;
+    height:240rpx;
+    background-color: #fff;
+    margin-top:20rpx;
+    padding-top:20rpx;
+}
+.names{
+    width:100%;
+    height:68rpx;
+}
+.name1{
+    font:28rpx/68rpx 微软雅黑;
+    color:#999;
+    float:left;
+    margin-left:33rpx;
+}
+.name2{
+    font:28rpx/68rpx 微软雅黑;
+    color:#000;
+    margin-left:34rpx;
+    float:left;
+}
+.name3{
+    font:28rpx/68rpx 微软雅黑;
+    color:#000;
+    margin-left:45rpx;
+    float:left;
+}
+.all1{
+    width:698rpx;
+    height:130rpx;
+    border-top:1rpx solid #e5e5e5;
+    margin:0 auto;
+}
+.call{
+    width:278rpx;
+    height:78rpx;
+    border:1rpx solid #16bf76;
+    font:32rpx/68rpx 微软雅黑;
+    color:#16bf76;
+    margin-top:25rpx;
+    text-align: center;
+    float:left;
+    border-radius: 9rpx;
+    margin-left:60rpx;
+}
+.call:nth-child(1){
+    margin-left:40rpx;
+}

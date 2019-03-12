@@ -1,0 +1,39 @@
+.w-img{
+  width:410rpx;
+  height:262rpx;
+  margin-left:138rpx;
+  margin-top:100rpx;
+}
+.w-img image{
+  width:100%;
+  height:100%;
+}
+.w-text{
+  font-size:44rpx;
+  color:#ccc;
+  line-height:112rpx;
+  text-align:center;
+}
+.w-info{
+  margin-top:140rpx;
+  padding:0 26rpx;
+}
+.w-info .img1{
+  width:34rpx;
+  height:26rpx;
+  margin-right:30rpx;
+}
+.w-info .img2{
+  width:24rpx;
+  height:33rpx;
+  margin-right:30rpx;
+  margin-left:4rpx;
+  position:relative;top:2rpx;
+}
+.w-info text{
+  font-size:32rpx;
+  color:#666;
+}
+.w-info .info-list{
+  line-height: 70rpx;
+}

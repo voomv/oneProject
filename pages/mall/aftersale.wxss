@@ -1,0 +1,26 @@
+.sale-list{
+  width:480rpx;
+  height:200rpx;
+  box-shadow:0 0 26rpx rgba(0,0,0,0.14);
+  margin:0 auto;
+  border-radius:20rpx;
+}
+.sale-list.list1{
+  margin-top:128rpx;
+}
+.sale-list.list2{
+  margin-top:50rpx;
+}
+.sale-list image{
+  width:110rpx;
+  height:110rpx;
+  margin:40rpx 40rpx 0 94rpx;
+  float:left;
+}
+.sale-list text{
+  float:left;
+  line-height:200rpx;
+}
+.sale-list .text2{
+  letter-spacing:70rpx;
+}

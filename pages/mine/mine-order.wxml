@@ -1,0 +1,147 @@
+<!--pages/mine/mine-order.wxml-->
+<view class='mine-coupon-container'>
+  <view class='mine-coupon-tab'>
+    <view class="mct-con {{mcClass0?'borderB16b':''}}" bindtap='mineCouponTab' data-idx='0'>全部</view>
+    <view class="mct-con {{mcClass1?'borderB16b':''}}" bindtap='mineCouponTab' data-idx='1'>待付款</view>
+    <view class="mct-con {{mcClass2?'borderB16b':''}}" bindtap='mineCouponTab' data-idx='2'>待收货</view>
+    <view class="mct-con {{mcClass3?'borderB16b':''}}" bindtap='mineCouponTab' data-idx='3'>待评价</view>
+  </view>
+  <view class='mct-con-show' hidden='{{mcShow0}}'>
+    <view class='mcs-list'>
+      <view class='mscl-list' bindtap='toOrderDetail'>
+        <view class='mscl-con'>
+          <view class='mscl-abcon'>
+            <view class='msclab-one'>已发货</view>
+            <view class='msclab-two'>x 1</view>
+          </view>
+          <image src='../../images/good-sale.png'></image>
+          <view class='msclc-two'>
+            <view class='msclct-one'>商品名称</view>
+            <view class='msclct-two'>36V12Ah</view>
+            <view class='msclct-three'>￥450</view>
+          </view>
+        </view>
+      </view>
+      <view class='mscl-bottom'>
+        <view class='msclb-left'>
+          <view class='fz30'>合计:</view>
+          <view class='fz30 cof10'>￥450</view>
+        </view>
+        <view class='msclb-right'>
+          <view class='msclbrc2'>取消订单</view>
+          <view class='msclbrc' bindtap='toConfirm'>确认收货</view>
+        </view>
+      </view>
+    </view>
+    <view class='mcs-list'>
+      <view class='mscl-list'>
+        <view class='mscl-con'>
+          <view class='mscl-abcon'>
+            <view class='msclab-one'>已付款</view>
+            <view class='msclab-two'>x 1</view>
+          </view>
+          <image src='../../images/good-sale.png'></image>
+          <view class='msclc-two'>
+            <view class='msclct-one'>商品名称</view>
+            <view class='msclct-two'>36V12Ah</view>
+            <view class='msclct-three'>￥450</view>
+          </view>
+        </view>
+      </view>
+      <view class='mscl-bottom'>
+        <view class='msclb-left'>
+          <view class='fz30'>合计:</view>
+          <view class='fz30 cof10'>￥450</view>
+        </view>
+        <view class='msclb-right'>
+          <view class='msclbrc2'>取消订单</view>
+          <view class='msclbrc' bindtap='toTHGoods'>退货/换货</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='mct-con-show' hidden='{{mcShow1}}'>
+    <view class='mcs-list'>
+      <view class='mscl-list'>
+        <view class='mscl-con'>
+          <view class='mscl-abcon'>
+            <view class='msclab-one'>已付款</view>
+            <view class='msclab-two'>x 1</view>
+          </view>
+          <image src='../../images/good-sale.png'></image>
+          <view class='msclc-two'>
+            <view class='msclct-one'>商品名称</view>
+            <view class='msclct-two'>36V12Ah</view>
+            <view class='msclct-three'>￥450</view>
+          </view>
+        </view>
+      </view>
+      <view class='mscl-bottom'>
+        <view class='msclb-left'>
+          <view class='fz30'>合计:</view>
+          <view class='fz30 cof10'>￥450</view>
+        </view>
+        <view class='msclb-right'>
+          <view class='msclbrc2'>取消订单</view>
+          <view class='msclbrc'>确认收货</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='mct-con-show' hidden='{{mcShow2}}'>
+    <view class='mcs-list'>
+      <view class='mscl-list'>
+        <view class='mscl-con'>
+          <view class='mscl-abcon'>
+            <view class='msclab-one'>待收货</view>
+            <view class='msclab-two'>x 1</view>
+          </view>
+          <image src='../../images/good-sale.png'></image>
+          <view class='msclc-two'>
+            <view class='msclct-one'>商品名称</view>
+            <view class='msclct-two'>36V12Ah</view>
+            <view class='msclct-three'>￥450</view>
+          </view>
+        </view>
+      </view>
+      <view class='mscl-bottom'>
+        <view class='msclb-left'>
+          <view class='fz30'>合计:</view>
+          <view class='fz30 cof10'>￥450</view>
+        </view>
+        <view class='msclb-right'>
+          <view class='msclbrc2'>取消订单</view>
+          <view class='msclbrc'>确认收货</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='mct-con-show' hidden='{{mcShow3}}'>
+    <view class='mcs-list'>
+      <view class='mscl-list'>
+        <view class='mscl-con'>
+          <view class='mscl-abcon'>
+            <view class='msclab-one'>待评价</view>
+            <view class='msclab-two'>x 1</view>
+          </view>
+          <image src='../../images/good-sale.png'></image>
+          <view class='msclc-two'>
+            <view class='msclct-one'>商品名称</view>
+            <view class='msclct-two'>36V12Ah</view>
+            <view class='msclct-three'>￥450</view>
+          </view>
+        </view>
+      </view>
+      <view class='mscl-bottom'>
+        <view class='msclb-left'>
+          <view class='fz30'>合计:</view>
+          <view class='fz30 cof10'>￥450</view>
+        </view>
+        <view class='msclb-right'>
+          <view class='msclbrc2'>取消订单</view>
+          <view class='msclbrc'>确认收货</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,282 @@
+page{
+  background:#f9f9f9;
+}
+.tab-img{
+  width:100%;
+  height:320rpx;
+}
+.tab-img image{
+  width:100%;
+  height:100%;
+}
+.d-box1{
+  position:relative;
+  background:#fff;
+  padding:18rpx 26rpx 12rpx;
+}
+
+.d-box1 .share{
+  width:130rpx;
+  height:50rpx;
+  background:#f0f0f0;
+  font-size:26rpx;
+  color:#999;
+  position:absolute;
+  right:0;top:42rpx;
+  border-radius:30rpx 0 0 30rpx;
+  
+}
+.d-box1 .share image{
+  width:31rpx;
+  height:31rpx;
+  margin:10rpx 10rpx 0 15rpx;
+  float:left;
+}
+.d-box1 .share text{
+  line-height:50rpx;
+}
+.d-box1 .title1{
+  font-size:32rpx;
+  color:#333;
+  line-height:54rpx;
+}
+.d-box1 .price{
+  line-height:50rpx;
+}
+.d-box1 .price .t1{
+  font-size:32rpx;
+  color:#ff102c;
+  margin-right:20rpx;
+}
+.d-box1 .price .t2{
+  font-size:26rpx;
+  color:#999;
+}
+.d-box1 .d-volume{
+  font-size:26rpx;
+  color:#999;
+  line-height:58rpx;
+}
+.d-box1 .d-volume .v-text{
+  margin-right:186rpx;
+}
+.d-box2{
+  margin-top:20rpx;
+  background:#fff;
+  font-size:26rpx;
+  padding:15rpx 26rpx;
+}
+.d-box2 .d-title{
+  color:#999;
+  float:left;
+  width:10%;
+  line-height:44rpx;
+}
+.d-box2 .d-text{
+  color:#333;
+  width:90%;
+  float:left;
+}
+.d-box2 .d-text text{
+  display:inline-block;
+  width:25%;
+  line-height:44rpx;
+}
+.d-box3{
+  font-size:26rpx;
+  padding:22rpx 26rpx;
+  background:#fff;
+  margin-top:40rpx;
+}
+.d-box3 .list{
+  margin:14rpx 0;
+  height:80rpx;
+}
+.d-box3 .l-text{
+  color:#999; 
+  width:10%;
+  float:left;
+  line-height:80rpx;
+}
+.d-box3 .r-text{
+  width:90%;
+  float:left;
+}
+.d-box3 .r-text text{
+  display:inline-block;
+  width:136rpx;
+  height:56rpx;
+  text-align:center;
+  line-height:60rpx;
+  background:#f7f7f7;
+  color:#666;
+  border-radius:10rpx;
+  margin:10rpx 8rpx;
+  border:2rpx solid #f7f7f7;
+}
+.d-box3 .r-text text.active{
+  background:#e9fff5;
+  border:2rpx solid #16bf76;
+  color:#16bf76;
+}
+.d-box3 .num-box{
+  float:left;
+}
+.d-box3 .num-box text{
+  display:inline-block;float:left;
+ 
+}
+.d-box3 .num-box input{
+  float:left;
+   width:60rpx;height:60rpx;
+  background:#f7f7f7;
+  text-align:center;
+  margin-top:10rpx;
+  margin:10rpx 10rpx 0;
+  color:#333;
+}
+.d-box3 .num-box .jian,.jia{
+  width:60rpx;height:60rpx;
+  background:#f7f7f7;
+  color:#ccc;
+  font-size:60rpx;
+  line-height:50rpx;
+  text-align:center;
+  border-radius:5rpx;
+  margin-top:10rpx;
+}
+.d-box3 .l-text2{
+  float:left;
+}
+.d-box3 .l-text2{
+  margin-left:40rpx;
+  line-height:80rpx;
+  color:#ccc;
+}
+.detail-box{
+  padding:0 26rpx;
+  background:#fff;
+  margin-top:20rpx;
+}
+.detail-box .d-tabs{
+  height:60rpx;
+  line-height:60rpx;
+  font-size:32rpx;
+  color:#666;
+  padding-top:20rpx;
+  padding-bottom:19rpx;
+  border-bottom:2rpx solid #e5e5e5;
+}
+.detail-box .d-tabs .text{
+  display:inline-block;
+  width:49%;
+  text-align:center;
+  float:left;
+  height:60rpx;
+  line-height:60rpx;
+}
+.detail-box .text.active{
+  color:#16bf76;
+}
+.detail-box .d-tabs .border{
+  display:inline-block;
+  width:2rpx;
+  height:60rpx;
+  background:#e5e5e5;
+  float:left;
+}
+
+/* 图文介绍 */
+.detail-box .d-center{
+  margin-top:30rpx;
+  padding-bottom:100rpx;
+}
+.detail-box .d-center image{
+  width:100%;
+}
+.detail-box .dc-text{
+  font-size:28rpx;
+  color:#666;
+  line-height:44rpx;
+  margin:18rpx 0;
+}
+
+/* 商品评价 */
+.detail-box .evaluate-box{
+  padding-bottom:100rpx;
+}
+.evaluate-box .eva-list{
+  border-bottom:2rpx solid #e5e5e5;
+  padding-bottom:34rpx;
+  padding-top:42rpx;
+}
+.evaluate-box .eva-l{
+  float:left;
+  width:16%;
+}
+.evaluate-box .eva-l image{
+  width:80rpx;
+  height:80rpx;
+}
+.evaluate-box .eva-r{
+  float:left;
+  width:84%;
+}
+.evaluate-box .eva-1{
+  display:flex;
+  justify-content:space-between;
+}
+.evaluate-box .eva-1 .eva-text1{
+  font-size:32rpx;
+  color:#333;
+}
+.evaluate-box .eva-1 .time{
+  font-size:24rpx;
+  color:#999;
+}
+
+.evaluate-box .eva-2 image{
+  width:24rpx;height:23rpx;
+}
+.evaluate-box .eva-3{
+  width:100%;
+  font-size:28rpx;
+  color:#666;
+  line-height:40rpx;
+  margin-top:22rpx;
+}
+.evaluate-box .eva-4{
+  margin-top:12rpx;
+}
+.evaluate-box .eva-4 image{
+  width:150rpx;height:150rpx;
+  border-radius:10rpx;
+  margin-right:20rpx;
+}
+
+
+
+
+
+
+
+.d-btns{
+  width:100%;
+  display:flex;
+  justify-content:space-between;
+  position:fixed;bottom:0;
+}
+.d-btns button{
+  border-radius:0;
+  border:0;
+  color:#fff;
+  font-size:32rpx;
+}
+.d-btns .d-cart{
+  background:#ffa42f;
+  width:100%
+}
+.d-btns .d-buy{
+  background:#ff562f;
+  width:100%
+}

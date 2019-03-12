@@ -1,0 +1,151 @@
+page{
+  background:#f9f9f9;
+  overflow: hidden;
+}
+.shop-box{
+  height:82vh;
+  overflow:auto;
+}
+.shop-list{
+  padding:40rpx 26rpx;
+  background:#fff;
+  margin-bottom:30rpx;
+}
+.shop-list .check{
+  float:left;
+  margin-top:40rpx;
+}
+.check{
+  width:44rpx;
+  height:44rpx;
+  border-radius:50%;
+  border:2rpx solid #ccc;
+  overflow:hidden;
+}
+.check checkbox{
+  width:44rpx;
+  height:44rpx;  
+  position:relative;
+  top:-7rpx;
+  left:-1rpx;
+}
+.shop-list .com-info{
+  float:left;
+  margin-left:16rpx;
+}
+.com-info image{
+  float: left;
+  margin-right:23rpx;
+}
+.com-info .s-text{
+  float:left;
+}
+.com-info .s-t1{
+  font-size:32rpx;
+  color:#333;
+}
+.com-info .s-t2{
+  font-size:26rpx;
+  color:#666;
+  width:140rpx;
+  height:60rpx;
+  background:#f7f7f7;
+  text-align:center;
+  line-height:60rpx;
+  border-radius:10rpx;
+  margin:10rpx 0 20rpx;
+}
+.com-info .s-t3{
+  font-size:32rpx;
+  color:#ff102c;
+}
+.com-info .s-text text{
+  display:block;
+}
+
+.shop-list image{
+  width:180rpx;
+  height:180rpx;
+  border-radius:10rpx;
+}
+
+.shop-list .num-box{
+  float:left;
+  margin-top:104rpx;
+  margin-left:90rpx;
+}
+.shop-list .num-box text{
+  display:inline-block;float:left;
+ 
+}
+.shop-list .num-box input{
+  float:left;
+   width:60rpx;height:60rpx;
+  background:#f7f7f7;
+  text-align:center;
+  margin:10rpx 5rpx 0;
+  color:#333;
+  border-radius:5rpx;
+}
+.shop-list .num-box .jian,.jia{
+  width:60rpx;height:60rpx;
+  background:#f7f7f7;
+  color:#ccc;
+  font-size:60rpx;
+  line-height:50rpx;
+  text-align:center;
+  border-radius:5rpx;
+  margin-top:10rpx;
+}
+
+.settlement{
+  width:100%;
+  position:fixed;
+  bottom:100rpx;
+  left: 0;
+  font-size:32rpx;
+  color:#666;
+  background:#fff;
+  height:96rpx;
+  border-top:2rpx solid #e5e5e5;
+  border-bottom:2rpx solid #e5e5e5;
+}
+.settlement .all-check{
+  font-size:32rpx;
+  color:#666;
+  float:left;
+  padding-left:26rpx;
+  
+}
+.settlement .all-check .check{
+  float:left;
+  margin-top:22rpx;
+  margin-right:22rpx;
+}
+.settlement .all-check checkbox{
+  top:-4rpx;
+}
+.settlement .all-check text{
+  display:inline-block;
+  line-height:96rpx;
+}
+.settlement .total{
+  float:left;
+  line-height:96rpx;
+  margin-left:210rpx;
+}
+.settlement .total text{
+  color:#ff102c;
+}
+.settlement .s-btn{
+  width:180rpx;
+  height:100rpx;
+  background:#16bf76;
+  color:#fff;
+  position:absolute;
+  top:0;
+  right:0;
+  border-radius:0;
+  font-size:32rpx;
+  line-height:100rpx;
+}

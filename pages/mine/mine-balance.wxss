@@ -1,0 +1,105 @@
+/* pages/mine/mine-balance.wxss */
+
+.mine-balance-container{
+  width: 100%;
+  padding: 0 30rpx;
+  box-sizing: border-box;
+}
+.mine-bal-banner{
+  width: 100%;
+  height: 260rpx;
+  background-color: #ffa42f;
+  border-radius: 5px;
+  margin-top: 40rpx;
+  position: relative;
+}
+.mbb-one{
+  width: 50%;
+  height: 50rpx;
+  line-height: 50rpx;
+  font-size: 32rpx;
+  color: #fff;
+  position: absolute;
+  top: 60rpx;
+  left: 80rpx;
+}
+.mbb-two{
+  width: 50%;
+  height: 50rpx;
+  line-height: 50rpx;
+  font-size: 36rpx;
+  color: #fff;
+  position: absolute;
+  top: 130rpx;
+  left: 80rpx;
+}
+.mbb-three{
+  width: 140rpx;
+  height: 140rpx;
+  position: absolute;
+  top: 60rpx;
+  right: 80rpx;
+}
+
+.mine-bal-form-one{
+  width: 100%;
+  height: 90rpx;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: flex;
+  box-sizing: border-box;
+  margin-top: 120rpx;
+}
+.mine-bal-form-one view:first-child{
+  width: 30%;
+  height: 90rpx;
+  line-height: 90rpx;
+  font-size: 30rpx;
+  text-align: center;
+}
+.mine-bal-form-one view:last-child{
+  width: 70%;
+  height: 90rpx;
+}
+.mine-bal-ipt{
+  width: 100%;
+  height: 90rpx;
+  line-height: 90rpx;
+  font-size: 28rpx;
+}
+
+.mine-bal-form-two{
+  width: 100%;
+  height: 90rpx;
+  display: flex;
+  justify-content: space-around;
+  box-sizing: border-box;
+  margin-top: 120rpx;
+}
+.mine-bal-form-two button{
+  width: 330rpx;
+  height: 90rpx;
+  line-height: 90rpx;
+  border-radius: 5px;
+  font-size: 30rpx;
+  box-sizing: border-box;
+}
+.mine-bal-form-two button:first-child{
+  border: 1px solid #16bf76;
+  color: #16bf76;
+  background-color: #fff;
+}
+.mine-bal-form-two button:last-child{
+  color: #fff;
+  background-color: #16bf76;
+}
+
+.mine-bal-bottom{
+  width: 100%;
+  height: 40rpx;
+  line-height: 40rpx;
+  font-size: 28rpx;
+  text-align: center;
+  margin-top: 380rpx;
+  color: #16bf76;
+}

@@ -1,0 +1,68 @@
+<!--pages/mine/mine.wxml-->
+<view class="back" bindtap='back'>退出登录 <text class='iconfont icon-xiayiye1'></text> </view>
+<view class='container-mine'>
+  <view class='login' style='background-color:{{setting.color?setting.color:"#16bf76"}}'>
+    <image src="{{userInfo.headimg}}" class='userinfo-avatar'></image>
+    <view class='font-sz0 co'>{{userInfo.username}}</view>
+  </view>
+  <view class="tongji">
+    <view class="zhong">
+      <view class='zlj'>
+        <view class='f1'>今日统计</view>
+        <view class='f2'>{{userInfo.today}}单</view>
+      </view>
+      <view class='ylj'>
+        <view class='ylj-flex'>
+          <view class='f1'>本月累计</view>
+          <view class='f3'>{{userInfo.month}}单</view>
+      </view>
+      </view>
+      <view class='zlj'>
+        <view class='f1'>总累计</view>
+        <view class='f4'>{{userInfo.count}}单</view>
+      
+      </view>
+  </view>
+  </view>
+   <view class='shouyi'>
+    <image src='../../images/earning.png'></image> 
+     <view style='display:flex;justify-content:space-between;align-items:center;'>
+      <view class='iconfont icon-licaishouyi' style='color:{{setting.color?setting.color:"#0bb4ff"}}'></view> 
+      <view class='shouyi-con font-sz'>当月总收益：<text class=' font-sz2'>￥{{userInfo.monthMoney}}</text><text class=' font-sz4'></text></view>
+    </view>
+     
+    
+    <!-- <view bindtap='tixian' class='tixian font-sz2 co' style='background-color:{{setting.color?setting.color:"#0bb4ff"}}'>提现</view>
+  </view> 
+  <view class='jin'>
+    <view class='jin-con'>
+      <view class='lh font-sz2 co2'>已到账金额</view>
+      <view class='font-sz2 co3'>￥{{arrivedMoney}}</view>
+    </view>
+    <view class='jin-con'>
+      <view class='lh font-sz2 co2'>未到账金额</view>
+      <view class='font-sz2 co4'>￥{{unArrivedMoney}}</view>
+    </view>
+    <view class='jin-line'></view> -->
+  </view>
+  <view class='jiaoyi'>
+    <view class='jiaoyi-tit'>
+      <!-- <view class='iconfont icon-jiaoyi' style='color:{{setting.color?setting.color:"#0bb4ff"}}'></view>  -->
+      <view class='jiaoyi-tit-conl'>跑腿记录</view>
+    </view>
+    <block wx:for="{{orderList}}" wx:key="">
+      <view class='jiaoyi-con' data-id='{{item.order_id}}' data-store_id="{{item.store_id}}" bindtap='toOrderDetail'>    
+        <!-- <image src="{{userInfo.avatarUrl}}" class='userinfo-avatar1 mgleft'></image> -->
+        <view class='jiaoyi-time'>{{item.add_time}}</view>
+        <block wx:for="{{item.order_goods}}" wx:key='id' wx:for-item="goods">
+          <view class='jiaoyi-name'>{{goods.goods_name}}</view>
+        </block>
+        <view class='jiaoyi-jin'>{{item.status}}</view>
+      </view>
+    </block>
+    <view class="footer-text" wx:if="{{bottom}}">到底了...</view>
+    <view class="footer-text" wx:if="{{loading}}">加载中...</view>
+  </view>
+</view>
+<import src="../plugin/plugin.wxml"/>
+<template is="footer" data="{{tab_index:tab_index,item:setting}}"></template>

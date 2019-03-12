@@ -1,0 +1,149 @@
+/* .content{
+  width: 600rpx;
+  margin: 114rpx auto 0;
+  position: relative;
+}
+
+.content .con{
+  height: 62rpx;
+  line-height: 62rpx;
+  margin-bottom: 40rpx;
+  display: flex;
+  position: relative;
+  border-bottom: 1rpx solid #cccccc;
+}
+.content .con .tit{
+  font-size: 32rpx;
+  position: absolute;
+  line-height: 62rpx;
+  color: #333333;
+}
+.content .con input{
+  flex: 2;
+  height: 62rpx;
+  font-size: 32rpx;
+  padding-left: 200rpx;
+  color: #333333;
+}
+.content .con image{
+  width: 169rpx;
+  height: 42rpx;
+  position: absolute;
+  right: 0;
+  bottom: 12rpx;
+  background: red;
+  z-index: 99;
+}
+.content .con>view{
+  color: #0bb4ff;
+  font-size: 32rpx;
+  display: flex;
+  align-items: center;
+  width: 206rpx;
+  text-align: center
+}
+.btn{
+  margin-top: 90rpx;
+}
+.btn button{
+  width: 590rpx;
+  height: 80rpx;
+  font-size: 34rpx;
+  color: #ffffff;
+  margin-bottom: 30rpx;
+  line-height: 80rpx;
+  background-color:#ffffff; 
+} */
+page{
+  background-color: #f9f9f9;
+  padding-top:10rpx; 
+}
+
+.content{
+  width: 100%;
+  padding: 0 26rpx;
+  background-color: #ffffff;
+  margin-top: 20rpx;
+  box-sizing: border-box;
+  font-size: 32rpx;
+}
+.content .con{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1rpx solid #e5e5e5;
+  height: 89rpx;
+}
+.content .con:last-child{
+  border-bottom: 0;
+}
+.content .con text{
+  width: 199rpx;
+  color: #333333;
+}
+.content .con image{
+  width: 169rpx;
+  height: 44rpx;
+}
+.content .con input,.content .con .add{
+  flex: 2;
+  font-size: 32rpx;
+  color: #333333;
+}
+.content .con .add{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.content .con .add .a{
+  flex: 2;
+}
+.content .con .yanzheng{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.id{
+  padding-top:29rpx;
+  padding-bottom: 49rpx; 
+}
+.id .idTitle{
+  color: #ff2929
+}
+.id .idImg{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20rpx;
+  margin-top: 40rpx;
+}
+.id .idImg>view{
+  position: relative;
+  width: 300rpx;
+  height: 190rpx;
+}
+.id .idImg>view text{
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  left: 0;
+  bottom: 55rpx;
+  font-size: 24rpx;
+  color: #999999;
+}
+.id .idImg image{
+  width: 100%;
+  height: 100%;
+}
+.btn{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40rpx 26rpx;
+}
+.btn button{
+  width: 320rpx;
+  height: 80rpx;
+  color: #fff;
+  line-height: 80rpx;
+}

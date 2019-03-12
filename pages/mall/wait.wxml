@@ -1,0 +1,14 @@
+<view class="w-img">
+  <image src="../../images/l_bg.png"></image>
+</view>
+<view class="w-text">等待上架</view>
+<view class="w-info">
+  <view class="info-list">
+    <image class="img1" src="../../images/l_tel.png"></image>
+    <text class="tel">0913-2159666</text>
+  </view>
+  <view class="info-list">
+    <image class="img2" src="../../images/l_icon.png"></image>
+    <text class="adress">陕西省渭南市临渭区西五路怡惠园5单元西户</text>
+  </view>
+</view>

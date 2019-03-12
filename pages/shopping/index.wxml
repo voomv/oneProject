@@ -1,0 +1,74 @@
+<view class="shop-box">
+<checkbox-group bindchange="checkboxChange">
+  <view class="shop-list clearfix">
+    <view class="check">
+      
+          <checkbox value="" checked="{{checked}}"/>
+     
+    </view>
+    <view class="com-info">
+      <image src="../../images/l_pic1.jpg"></image>
+      <view class="s-text">
+        <text class="s-t1">商品名称</text>
+        <text class="s-t2">36V12Ah</text>
+        <text class="s-t3">￥450</text>
+      </view>
+    </view>
+    <view class="num-box">
+        <text class="jian">-</text>
+        <input type="number" value="1" name="number"></input>
+        <text class="jia">+</text>
+      </view>
+  </view>
+  <view class="shop-list clearfix">
+    <view class="check">
+          <checkbox value="" checked="{{checked}}"/>
+    </view>
+    <view class="com-info">
+      <image src="../../images/l_pic1.jpg"></image>
+      <view class="s-text">
+        <text class="s-t1">商品名称</text>
+        <text class="s-t2">36V12Ah</text>
+        <text class="s-t3">￥450</text>
+      </view>
+    </view>
+    <view class="num-box">
+        <text class="jian">-</text>
+        <input type="number" value="1" name="number"></input>
+        <text class="jia">+</text>
+      </view>
+  </view>
+ </checkbox-group>
+
+</view>
+
+<view class="settlement clearifx">
+<checkbox-group bindchange="allCheck">
+  <view class="all-check">
+    <view class="check">
+          <checkbox value="" checked="{{allcheck}}"/>
+    </view>
+    <text>全选</text>
+  </view>
+  </checkbox-group>
+  <view class="total">合计:<text>￥450</text></view>
+  <button class="s-btn">结算</button>
+</view>
+<view class='common-footer'>
+    <view class='common-footer-con' bindtap='toHome'>
+      <view class='cfc-img'><image src='../../images/home.png'></image></view>
+      <view class='cfc-fonts'>首页</view>
+    </view>
+    <view class='common-footer-con' bindtap='toMall'>
+      <view class='cfc-img'><image src='../../images/shopping.png'></image></view>
+      <view class='cfc-fonts'>服务商城</view>
+    </view>
+    <view class='common-footer-con'>
+      <view class='cfc-img'><image src='../../images/cart_1.png'></image></view>
+      <view class='cfc-fonts_1'>购物车</view>
+    </view>
+    <view class='common-footer-con' bindtap='toMine'>
+      <view class='cfc-img'><image src='../../images/mine.png'></image></view>
+      <view class='cfc-fonts'>我的</view>
+    </view>
+  </view>

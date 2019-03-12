@@ -1,0 +1,59 @@
+<!--pages/mine/mine-coupon.wxml-->
+<view class='mine-coupon-container'>
+  <view class='mine-coupon-tab'>
+    <view class="mct-con {{mcClass0?'borderB16b':''}}" bindtap='mineCouponTab' data-idx='0'>可领取</view>
+    <view class="mct-con {{mcClass1?'borderB16b':''}}" bindtap='mineCouponTab' data-idx='1'>待使用</view>
+    <view class="mct-con {{mcClass2?'borderB16b':''}}" bindtap='mineCouponTab' data-idx='2'>已使用</view>
+    <view class="mct-con {{mcClass3?'borderB16b':''}}" bindtap='mineCouponTab' data-idx='3'>已过期</view>
+  </view>
+  <view class='mct-con-show' hidden='{{mcShow0}}'>
+    <block wx:for="{{couponList}}" wx:key="">
+      <view class='mcs-list' data-couid="{{item.id}}">
+        <image src='../../images/coupon.png'></image>
+        <view class='mcs-list-one'>
+          <view class='fz50'>{{item.price}}</view>
+          <view class='fz32 marginL10'>元优惠券</view>
+        </view>
+        <view class='mcs-list-two'>满{{item.man_price }}元可用</view>
+        <view class='mcs-list-three'>有效期至{{item.end_data}}</view>
+        <view class='mcs-list-four' data-couid="{{item.id}}" bindtap='getRightNow'>立即领取</view>
+      </view>
+    </block>
+  </view>
+  <view class='mct-con-show' hidden='{{mcShow1}}'>
+    <view class='mcs-list'>
+      <image src='../../images/coupon.png'></image>
+      <view class='mcs-list-one'>
+        <view class='fz50'>10</view>
+        <view class='fz32 marginL10'>元优惠券</view>
+      </view>
+      <view class='mcs-list-two'>满500元可用</view>
+      <view class='mcs-list-three'>有效期至2018-12-12</view>
+      <view class='mcs-list-four2' bindtap='getRightNow'>去使用</view>
+    </view>
+  </view>
+  <view class='mct-con-show' hidden='{{mcShow2}}'>
+    <view class='mcs-list'>
+      <image src='../../images/coupon2.png'></image>
+      <view class='mcs-list-one'>
+        <view class='fz50'>10</view>
+        <view class='fz32 marginL10'>元优惠券</view>
+      </view>
+      <view class='mcs-list-two2'>满500元可用</view>
+      <view class='mcs-list-three'>有效期至2018-12-12</view>
+      <view class='mcs-list-four2' bindtap='getRightNow'>已使用</view>
+    </view>
+  </view>
+  <view class='mct-con-show' hidden='{{mcShow3}}'>
+    <view class='mcs-list'>
+      <image src='../../images/coupon2.png'></image>
+      <view class='mcs-list-one'>
+        <view class='fz50'>10</view>
+        <view class='fz32 marginL10'>元优惠券</view>
+      </view>
+      <view class='mcs-list-two2'>满500元可用</view>
+      <view class='mcs-list-three'>有效期至2018-12-12</view>
+      <view class='mcs-list-four2' bindtap='getRightNow'>已过期</view>
+    </view>
+  </view>
+</view>

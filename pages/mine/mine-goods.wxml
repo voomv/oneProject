@@ -1,0 +1,31 @@
+<!--pages/mine/mine-goods.wxml-->
+<view class='mine-goods-container'>
+  <view class='mine-goods-list'>
+    <view class='mgl-one'>
+      <view class='mglo-one'>默认</view>
+      <view>张三</view>
+      <view>13588889999</view>
+    </view>
+    <view class='mgl-two'>地址：河北省廊坊市广阳区 浙商广场河北省廊坊市广阳区 浙商广场</view>
+    <view class='mgl-three'>
+      <image src='../../images/edit.png' class='marginR30'></image>
+      <image src='../../images/delete.png' bindtap='toMineGoodsEdit'></image>
+    </view>
+  </view>
+  <view class='mine-goods-list'>
+    <view class='mgl-one'>
+      <view class='mglo-one2'>默认</view>
+      <view>张三</view>
+      <view>13588889999</view>
+    </view>
+    <view class='mgl-two'>地址：河北省廊坊市广阳区 浙商广场河北省廊坊市广阳区 浙商广场</view>
+    <view class='mgl-three'>
+      <image src='../../images/edit.png' class='marginR30'></image>
+      <image src='../../images/delete.png' bindtap='toMineGoodsEdit'></image>
+    </view>
+  </view>
+  <view class='mine-goods-btn' bindtap='toAdd'>
+    <image src='../../images/add.png'></image>
+    <view class='fz34 co16b marginL10'>新增地址</view>
+  </view>
+</view>

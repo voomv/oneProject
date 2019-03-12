@@ -1,0 +1,122 @@
+.bg-box{
+  width:100%;
+  height:100vh;
+
+}
+.bg-box image{
+  width:100%;
+  height:100%;
+}
+
+.content{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 600rpx;
+  height:580rpx;
+  padding:42rpx 35rpx;
+  background:rgba(255,255,255,0.4);
+  border-radius:20rpx;
+}
+
+.content .con{
+  width:600rpx;
+  height:90rpx;
+  line-height: 90rpx;
+  background:#fff;
+  border-radius:20rpx;
+  margin-bottom: 40rpx;
+  display: flex;
+  position: relative;
+}
+.content .con .img{
+  width:38rpx;
+  height:40rpx;
+  margin:26rpx 20rpx 0 54rpx;
+}
+.content .con .tit{
+  font-size: 32rpx;
+  line-height:90rpx;
+  color: #ccc;
+}
+.content .con input{
+  flex: 2;
+  height: 90rpx;
+  font-size: 32rpx;
+  color: #333333;
+  padding:0 20rpx;
+}
+.content .ch{
+  font-size:28rpx;
+  color:#999999;
+  font-weight:400;
+  width:600rpx;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.content .ch .rad1{
+  display:inline-block;
+  width:30rpx;
+  height:30rpx;
+  background:#fff;
+  border-radius:100%;
+  position:relative;
+  top:5rpx;
+  left:5rpx;
+  margin-right:10rpx;
+}
+.content .ch .rad2{
+  position:absolute;
+  top:6rpx;
+  left:6rpx;
+  display:inline-block;
+  width:18rpx;
+  height:18rpx;
+  background:#868686;
+  border-radius:100%;
+}
+.content .ch navigator{
+  display: inline;
+  text-decoration:underline;
+}
+.content .ch .forget-text{
+  color: #2e86e0;
+}
+.content .btn button{
+  width:600rpx;
+  height:90rpx;
+  background:#16bf76;
+  color:#fff;
+  margin-top: 74rpx;
+  font-size:32rpx;
+}
+.zhuce{
+  text-align:center;
+  font-size:30rpx;
+  margin-top:70rpx;
+}
+.zhuce .text1{
+  color:#999;
+}
+.zhuce .text2{
+  color:#16bf76;
+  text-decoration:underline;
+}
+/* .content button{
+  margin: 0;
+  padding: 0;
+  width: 268rpx;
+  color:#ffffff;
+  background-color: #0bb4ff;
+  border: 1rpx solid #0bb4ff;
+  border-radius: 10rpx;
+  font-size: 34rpx;
+  height: 90rpx;
+  line-height: 90rpx;
+}
+.content button:first-child{
+  background-color:#ffffff;
+  color: #0bb4ff;
+} */

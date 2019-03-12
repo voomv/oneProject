@@ -1,0 +1,14 @@
+<!--pages/mine/mine-balance-detail.wxml-->
+<view class='mine-bal-deetail-container'>
+  <view class='mbdc-list'>
+    <view class='mbdcl-one'>消费支出</view>
+    <view class='mbdcl-two'>2018年11月22日 13:07:55</view>
+    <view class='mbdcl-three'>-11.00</view>
+  </view>
+  <view class='mbdc-list'>
+    <view class='mbdcl-one'>用户充值</view>
+    <view class='mbdcl-two'>2018年11月21日 12:07:55</view>
+    <view class='mbdcl-three2'>+11.00</view>
+  </view>
+</view>
+

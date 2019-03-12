@@ -1,0 +1,22 @@
+<!--pages/mall/buy.wxml-->
+<view class="wai">
+<view class="address">
+    <view class="addresstext1">浙商广场 A座 5层501</view>
+    <view class="addresstext2">张张张  女士</view><view class="addresstext3">15097886774</view>
+    <image class="next" src="images/ding-2.png"></image>
+</view>
+<view class="shop">
+    <image class="tu" src="../../images/ding-1.png"></image>
+    <view class="you">
+        <view class="shoptext1">商品名称</view>
+        <view class="shoptext2">36V12Ah</view>
+        <view class="shoptext1">￥450</view>
+    </view>
+    <view class="shoptext3">x1</view>
+</view>
+<view class="payway"><view class="left">商家优惠券</view><image class="next1" src="images/ding-2.png"></image><view class="right">-￥3</view></view>
+<view class="payway"><view class="left">支付方式</view><image class="next1" src="images/ding-2.png"></image><view class="right1">余额支付</view></view>
+<view class="payway"><view class="right3"> ￥447</view><view class="right2">合计</view><view class="right1">已优惠￥3</view></view>
+<view class="payway4"><view class="left">配送方式</view><view class="right4">送货上门</view></view>
+<view class="pay"><view class="dai">待支付</view><view class="zong">￥26</view><view class="zhifu" bindtap="fukuan">立即支付</view></view>
+</view>

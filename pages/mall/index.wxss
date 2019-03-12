@@ -1,0 +1,66 @@
+.example {
+  display: block;
+  width: 100%;
+  height: 100rpx;
+  line-height:100rpx;
+}
+.marquee_box {
+  width: 100%;
+  position: relative;
+}
+.marquee_text {
+  width:100%;
+  white-space: nowrap;
+  position: absolute;
+  top: 0;
+  text-align:center;
+}
+
+page{
+  width:94%;
+  height: 100%;
+  margin:0 auto;
+  overflow: hidden;
+}
+.mail-container{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.notice{
+  width: 100%;
+  text-align:center;
+  font-size:28rpx;
+  color:#666;
+  height:48px;
+  padding-top:40rpx;
+  margin-bottom:48rpx;
+}
+.red{
+  color:#ff102c;
+}
+.category{
+  display:flex;
+  justify-content:space-around;
+  
+}
+.category .c-list{
+  width:300rpx;
+  height:220rpx;
+  text-align:cetner;
+  box-shadow:0 0 26rpx rgba(0,0,0,0.14);
+  margin:20rpx 0;
+  border-radius:10rpx;
+}
+.category image{
+  width:147rpx;
+  height:126rpx;
+  margin-top:26rpx;
+  margin-left:76rpx;
+}
+.category text{
+  display:block;
+  text-align:center;
+  font-size:32rpx;
+  color:#333;
+}

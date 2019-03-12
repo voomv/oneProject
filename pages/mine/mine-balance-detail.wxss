@@ -1,0 +1,56 @@
+/* pages/mine/mine-balance-detail.wxss */
+
+.mine-bal-deetail-container{
+  width: 100%;
+  padding: 0 30rpx;
+  box-sizing: border-box;
+}
+.mbdc-list{
+  width: 100%;
+  height: 120rpx;
+  border-bottom: 1px solid #ccc;
+  box-sizing: border-box;
+  position: relative;
+}
+.mbdcl-one{
+  width: 40%;
+  height: 40rpx;
+  line-height: 40rpx;
+  font-size: 32rpx;
+  position: absolute;
+  top: 20rpx;
+  left: 0;
+}
+.mbdcl-two{
+  width: 100%;
+  height: 40rpx;
+  line-height: 40rpx;
+  font-size: 24rpx;
+  position: absolute;
+  top: 60rpx;
+  left: 0;
+  color: #a9a9a9;
+}
+.mbdcl-three{
+  width: 40%;
+  height: 40rpx;
+  line-height: 40rpx;
+  font-size: 32rpx;
+  position: absolute;
+  top: 40rpx;
+  right: 0;
+  text-align: right;
+  color: #f8595a;
+}
+.mbdcl-three2{
+  width: 40%;
+  height: 40rpx;
+  line-height: 40rpx;
+  font-size: 32rpx;
+  position: absolute;
+  top: 40rpx;
+  right: 0;
+  text-align: right;
+  color: #24a630;
+}
+

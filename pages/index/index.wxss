@@ -1,0 +1,341 @@
+.clearfix::after{
+  display: block;
+  content:"";
+  clear:both;
+}
+page{
+  background-color: #f7f7f7;
+}
+.topTaps{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.topTaps .tap{
+  flex: 1;
+  text-align: center;
+  font-size: 32rpx;
+  color: #333333;
+  line-height: 100rpx;
+  border-bottom: 1rpx solid #cccccc;
+  background-color: #ffffff;
+  z-index: 999;
+}
+.topTaps .on{
+  color: #16bf76;
+  border-bottom: 4rpx solid #16bf76;
+}
+.lists{
+  padding: 100rpx 0;
+}
+.title{
+  background:#e5e5e5;
+  width:100%;
+  height:80rpx;
+  font-size:28rpx;
+  color:#333;
+  line-height:80rpx;
+  padding:0 26rpx;
+  
+}
+
+.lists .list{
+  /* padding: 21rpx 0 45rpx; */
+  box-sizing: border-box;
+  background-color: #ffffff;
+  padding-bottom: 20rpx;
+  margin-bottom:30rpx;
+}
+.lists .list .top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.lists .list .top image{
+  width: 90rpx;
+  height: 90rpx;
+  border-radius: 100%;
+  background-color:#a6a6a6; 
+  margin-right: 30rpx;
+}
+.lists .list .top>view{
+  flex: 2;
+}
+.lists .list .top>view>view:first-child{
+  font-size: 32rpx;
+  color: #333333;
+  line-height: 32rpx;
+  margin:11rpx 0 14rpx;
+}
+.lists .list .top>view>view:last-child{
+  font-size: 24rpx;
+  color: #999999;
+  line-height: 24rpx;
+}
+.lists .list .top text{
+  color: #16bf76;
+  font-size: 28rpx
+}
+.lists .list .menu{
+  margin: 39rpx 0 41rpx;
+}
+.menu{
+  margin:20rpx 0;
+  padding:0 26rpx;
+}
+.menu .img-box{
+  float:left;
+  width:180rpx;
+  height:180rpx;
+  border:2rpx solid #e5e5e5;
+  border-radius:20rpx;
+  margin-right:23rpx;
+  overflow:hidden;
+}
+.menu .right-box{
+  font-size:32rpx;
+  color:#333;
+}
+.menu .right-box .tit{
+  font-size:32rpx;
+   color:#333;
+   line-height:54rpx;
+   display:flex;
+  justify-content:space-between;
+    width:55%;
+}
+.menu .right-box .tit text{
+  display:block;
+  text-overflow:ellipsis;
+    overflow:hidden;
+    white-space:nowrap;
+    width:100%;
+}
+.menu .right-box .tit .text2{
+  font-size:30rpx;
+  color:#16bf76;
+}
+.menu .right-box .sku{
+  display:flex;
+  justify-content:space-between;
+  font-size:26rpx;
+  color:#666;
+  margin-top:26rpx;
+  line-height:60rpx;
+}
+.menu .right-box .sku-name{
+  display:inline-block;
+  width:140rpx;
+  height:60rpx;
+  background:#f7f7f7;
+  border-radius:10rpx;
+  text-align:center;
+  line-height:60rpx;
+}
+.lists .list .menu image{
+   width: 100%;
+  height: 100%;
+  background-color:#a6a6a6; 
+  margin-right: 30rpx;
+}
+/* .lists .list .menu>view{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-size: 30rpx;
+  color: #999999;
+  line-height: 30rpx;
+} */
+.lists .list .menu>view:first-child{
+  margin-bottom: 20rpx;
+}
+.lists .list .menu>view:last-child>view:nth-child(2){
+  flex: 2;
+  word-break:break-all;
+  /* -webkit-box-orient:vertical; */
+  /* overflow:hidden; */
+}
+.lists .jiantou{
+  width: 0rpx;
+  height: 0rpx;
+  margin-left: 20rpx;
+  border-left: 14rpx solid red;
+  border-top: 14rpx solid transparent;
+  border-right: 14rpx solid transparent;
+  border-bottom: 14rpx solid transparent;
+}
+
+.lists .list .menu>view:last-child>view text{
+  margin-bottom: 10rpx;
+}
+.lists .list .menu>view:last-child>view text::after{
+  content: "，"
+}
+.lists .list .menu>view:last-child>view text:last-child::after{
+  content: ""
+}
+.lists .list .menu>view:last-child>view text:last-child{
+  margin: 0;
+}
+.order .tit{
+  font-size:28rpx;
+  color:#333;
+
+}
+.order{
+  height: 80rpx;
+  background:#e5e5e5;
+  line-height:80rpx;
+  padding:0 26rpx;
+  font-size:28rpx;
+  color:#333;
+  display:flex;
+  justify-content:space-between;
+}
+.order .text2{
+  font-size:30rpx;
+  color:#16bf76;
+}
+.lists .list .add{
+  border-top:2rpx solid #eee;
+  padding:0 26rpx;
+}
+.lists .list .add view{
+  display: flex;
+  justify-content: space-between;
+  font-size: 28rpx;
+  padding: 28rpx 0;
+}
+  .lists .list .add view text:nth-child(2){
+  flex: 2;
+}  
+.lists .list .add view text:nth-child(3){
+  font-size: 36rpx;
+  color: #16bf76;
+  margin-left: 100rpx;
+}
+.lists .list .add view:last-child text:last-child{
+  color: #16bf76;
+}
+.lists .list .btn{
+  width: 698rpx;
+  height: 90rpx;
+  background-color: #16bf76;
+  text-align: center;
+  line-height: 80rpx;
+  margin: 0 auto;
+  border-radius: 10rpx;
+  color: #ffffff;
+  margin-top: 32rpx;
+}
+
+/* 配送中的样式 */
+.list2{
+  padding: 10rpx 0 44rpx;
+  background-color:#ffffff; 
+
+}
+.list2 .title{
+  display: flex;
+  justify-content: space-between;
+  font-size: 28rpx;
+  line-height: 28rpx;
+}
+
+.list2 .con image{
+  width: 100%;
+  height: 100%;
+  background-color:#cccccc; 
+  margin-right:20rpx;
+}
+.list2 .con .ri{
+  flex: 2;
+
+}
+.list2 .con .ri>view{
+  display: flex;
+  font-size: 28rpx;
+  color: #333333;
+  line-height: 30rpx;
+} 
+.list2 .con .ri>view view:nth-child(2){
+  flex: 2;
+  word-break:break-all;
+}
+.list2 .con .ri>view view:nth-child(2) text::after{
+  content: "，"
+}
+.list2 .con .ri>view view:nth-child(2) text:last-child::after{
+  content: ""
+}
+.list2 .add{
+  font-size: 28rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  line-height: 28rpx;
+  padding:0 26rpx;
+} 
+.list2 .add .text1{
+  color:#333;
+  width:200rpx;
+}
+.list2 .add .text2{
+  color:#666;
+}
+
+.list2 .add .iconfont{
+  color: #16bf76;
+  margin-left: 100rpx;
+}
+.list2 .btn{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 40rpx;
+}
+.list2 .btn view{
+  width: 296rpx;
+  height: 66rpx;
+  border: 2rpx solid #16bf76;
+  border-radius: 10rpx;
+  text-align: center;
+  line-height: 66rpx;
+  font-size: 28rpx;
+  color: #16bf76;
+}
+.tips{
+  width: 150rpx;
+  height: 150rpx;
+  position: fixed;
+  right: 15rpx;
+  bottom: 200rpx;
+  background-color: #ffa42f;
+  border-radius: 100%;
+  text-align: center;
+  line-height: 150rpx;
+  color: #ffffff;
+  box-shadow: 0rpx 0rpx 30rpx rgba(255,164,47,.3);
+  padding: 0;
+}
+.footer .icon1{
+  color:#16bf76;
+}
+
+
+
+
+.lists .xialaimg{
+  height: 30rpx;
+  margin-left: 20rpx;
+  line-height: 24rpx; 
+}
+.lists .xialaimg image{
+  width: 30rpx;
+  height: 18rpx;
+  transform: rotate(-90deg);
+  background-color:transparent; 
+}

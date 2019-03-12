@@ -1,0 +1,23 @@
+.w-info{
+  padding:0 26rpx;
+  margin-top:62rpx;
+}
+.w-info .img1{
+  width:34rpx;
+  height:26rpx;
+  margin-right:30rpx;
+}
+.w-info .img2{
+  width:24rpx;
+  height:33rpx;
+  margin-right:30rpx;
+  margin-left:4rpx;
+  position:relative;top:2rpx;
+}
+.w-info text{
+  font-size:32rpx;
+  color:#666;
+}
+.w-info .info-list{
+  line-height: 70rpx;
+}

@@ -1,0 +1,54 @@
+<!-- <view class='content'>
+  <view class='con' wx:for="{{nodes}}">
+    <text class='tit'>{{item.title}}</text>
+    <input password='{{item.password}}' type='{{item.type}}' name="{{item.name}}" maxlength='{{item.maxlength}}' bindinput='getInput' data-name="{{item.name}}" placeholder='{{item.name=="password"||item.name=="passWord"?"8-16位字母数字符号":""}}' placeholder-style='color:#cccccc;font-size:32rpx;'/>
+    <image wx:if="{{item.name=='imgVerification'}}" src='{{img}}' bindtap='getImg'/>
+    <view wx:if="{{item.name=='verification'}}">
+      <view style='width:15rpx;height:40rpx;border-left:1rpx solid #cccccc;'></view>
+      <view bindtap='{{verificationTime==0?"getVerification":""}}' style='flex:2;color:{{verificationTime==0?"#0bb4ff":"#cccccc"}}'>{{verificationTime==0?"获取验证码":"重新获取"+verificationTime+"s"}}</view>
+    </view>
+    <view class='upID'>
+      <view class='upImg'>
+
+      </view>
+      <view class='upImg'></view>
+    </view>
+  </view>
+  <view class='btn'>
+    <button style='border:1rpx solid {{setting.color?setting.color:"#0bb4ff"}};background-color:{{setting.color?setting.color:"#0bb4ff"}};' bindtap='submit'>立即申请</button>
+    <button style='border:1rpx solid {{setting.color?setting.color:"#0bb4ff"}};color:{{setting.color?setting.color:"#0bb4ff"}}' bindtap='back'>已有账号去登陆</button>
+  </view>
+</view> -->
+
+<view class='content' wx:for="{{nodes}}" wx:for-item="i" wx:key="id">
+  <view class='con' wx:for="{{i.class}}" wx:for-item="j" wx:key="id">
+    <text>{{j.title}}</text>
+    <input wx:if="{{j.name!='add'}}" password='{{j.password}}' type='{{j.type}}' name="{{j.name}}" maxlength='{{j.maxlength}}' bindinput='getInput' data-name="{{j.name}}" placeholder='{{j.name=="password"||j.name=="passWord"?"8-16位字母数字符号":""}}' placeholder-style='color:#cccccc;font-size:32rpx;'/>
+    <image wx:if="{{j.name=='imgVerification'}}" src='{{img}}' bindtap='getImg'/>
+    <view wx:if="{{j.name=='verification'}}" class='yanzheng'>
+      <view style='width:15rpx;height:40rpx;border-left:1rpx solid #cccccc;'></view>
+      <view bindtap='{{verificationTime==0?"getVerification":""}}' style='flex:2;color:{{verificationTime==0?"#16bf76":"#cccccc"}}'>{{verificationTime==0?"获取验证码":"重新获取"+verificationTime+"s"}}</view>
+    </view>
+    <view class='add' wx:if="{{j.name=='add'}}" bindtap='getAdd'>
+      <view class='a' style='color:{{add?"#333333":"#cccccc;"}}'>{{add?add:'请选择地址'}}</view>
+      <view class='iconfont icon-xiayiye1'></view>
+    </view>
+  </view>
+</view>
+<view class='content id'>
+  <view class='idTitle'>*上传身份证照片</view>
+  <view class='idImg'>
+    <view data-id="1" bindtap='getIdImg'>
+      <image src="{{idImg1?idImg1:'/images/id.png'}}"/>
+      <text hidden='{{idImg1}}'>人像面照片</text>
+    </view>
+    <view data-id="2" bindtap='getIdImg'>
+      <image src="{{idImg2?idImg2:'/images/id.png'}}"/>
+      <text hidden='{{idImg2}}'>国徽面照片</text>
+    </view>
+  </view>
+</view>
+<view class='btn'>
+  <button style='border:1rpx solid {{setting.color?setting.color:"#16bf76"}};color:{{setting.color?setting.color:"#16bf76"}}' bindtap='back'>已有账号去登录</button>
+  <button style='border:1rpx solid {{setting.color?setting.color:"#16bf76"}};background-color:{{setting.color?setting.color:"#16bf76"}};' bindtap='submit'>立即注册</button>
+</view>

@@ -1,0 +1,13 @@
+
+<navigator hover-class="none" url="/pages/mall/door">
+  <view class="sale-list list1">
+    <image src="../../images/l_sh_pic1.png"></image>
+    <text class="text1">上门售后</text>
+  </view>
+</navigator>
+<navigator hover-class="none" url="/pages/mall/point">
+  <view class="sale-list list2">
+    <image src="../../images/l_sh_pic2.png"></image>
+    <text class="text2">定点</text>
+  </view>
+</navigator>

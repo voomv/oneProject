@@ -1,0 +1,52 @@
+<!--pages/orderList/orderList.wxml-->
+<!-- <view class='contain-orderList'>
+  <view class='orderList-tit'>
+    <image class='orderList-tit-img' src='../../images/allpay.png'></image>
+    <view class='orderList-tit-l'>买买买</view>
+    <view class='orderList-tit-r'>-1888</view>
+  </view>
+  <view class='orderList-line'></view>
+  <view class='orderList-con'>
+    <view class='con-detail'>
+      <view class='con-detail-l'>记录人</view>
+      <view class='con-detail-r'>流星花园</view>
+    </view>
+    <view class='con-detail'>
+      <view class='con-detail-l'>时间</view>
+      <view class='con-detail-r'>2018-8-8</view>
+    </view>
+    <view class='con-detail'>
+      <view class='con-detail-l'>备注</view>
+      <view class='con-detail-r'>流星花园真好看</view>
+    </view>
+  </view>
+</view> -->
+   <view class='list'>
+    <view class='top'>
+      <image src='{{store_id==0?detail.store.head_img:detail.store.logo}}'/>
+      <view>
+        <view>{{store_id==0?detail.store.nick_name:detail.store.name}}</view>
+        <view>{{detail.list.time}}</view>
+      </view>
+      <text>+￥{{detail.money.ps_money}}</text>  
+    </view>
+      <view class='menu'>
+      <view><text class='tit'>订单号：</text><text>{{detail.list.order_id}}</text></view>
+      <view>
+        <text class='tit'>商　品：</text>
+        <view>
+          <text wx:for="{{detail.good_order}}" wx:key='id'>{{item.goods_name}}×{{item.num}}</text>
+        </view>
+      </view>      
+    </view> 
+     <view class='add'>
+      <view>
+        <text style='width: 125rpx;'>取　货：</text>
+        <text>{{store_id==0?detail.address.address:detail.store.address}}</text>
+      </view>
+      <view>
+        <text style='width: 125rpx;'>送　货：</text>
+        <text>{{detail.list.address}}</text>
+      </view>
+    </view>  
+  </view> 
